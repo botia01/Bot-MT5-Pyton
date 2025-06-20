@@ -1,0 +1,152 @@
+2025-06-20 17:53:55 - INFO - Sistema iniciado
+2025-06-20 17:55:44 - INFO - Sistema iniciado
+2025-06-20 17:55:44 - ERROR - Error al crear la interfaz: 'InterfazTrading' object has no attribute 'par_divisa'
+2025-06-20 17:55:44 - ERROR - Error al mostrar mensaje: 'InterfazTrading' object has no attribute 'txt_mensajes'
+2025-06-20 17:55:44 - ERROR - Error al crear la interfaz: 'InterfazTrading' object has no attribute 'par_divisa'
+2025-06-20 17:55:44 - INFO - Estrategia inicializada: Estrategia Base
+2025-06-20 17:55:44 - ERROR - Error al mostrar mensaje: 'InterfazTrading' object has no attribute 'txt_mensajes'
+2025-06-20 17:55:44 - INFO - Estrategia inicializada: Estrategia Base
+2025-06-20 17:55:44 - INFO - Interfaz iniciada
+2025-06-20 17:55:53 - ERROR - Error al conectar: tuple indices must be integers or slices, not str
+2025-06-20 17:57:38 - INFO - Sistema iniciado
+2025-06-20 17:57:38 - INFO - Sistema iniciado correctamente
+2025-06-20 17:57:38 - ERROR - Error al crear la interfaz: 'InterfazTrading' object has no attribute 'actualizar_divisas_disponibles'
+2025-06-20 17:57:48 - INFO - Sistema iniciado
+2025-06-20 17:57:48 - INFO - Sistema iniciado correctamente
+2025-06-20 17:57:48 - ERROR - Error al crear la interfaz: 'InterfazTrading' object has no attribute 'actualizar_divisas_disponibles'
+2025-06-20 17:58:36 - INFO - Sistema iniciado
+2025-06-20 17:58:36 - INFO - Sistema iniciado correctamente
+2025-06-20 17:58:36 - WARNING - Conector no inicializado. Lista de divisas no disponible.
+2025-06-20 17:58:36 - WARNING - Conector no inicializado
+2025-06-20 17:58:36 - INFO - Interfaz creada exitosamente
+2025-06-20 17:58:36 - INFO - Estrategia inicializada: Estrategia Base
+2025-06-20 17:58:36 - INFO - Estrategia inicializada: Estrategia Base
+2025-06-20 17:58:36 - INFO - Interfaz iniciada
+2025-06-20 17:58:41 - ERROR - Error al procesar información de cuenta: tuple indices must be integers or slices, not str
+2025-06-20 17:58:41 - ERROR - Error al procesar información de cuenta: tuple indices must be integers or slices, not str
+2025-06-20 17:59:50 - INFO - Sistema iniciado
+2025-06-20 17:59:50 - INFO - Sistema iniciado correctamente
+2025-06-20 17:59:50 - WARNING - Conector no inicializado. Lista de divisas no disponible.
+2025-06-20 17:59:50 - WARNING - Conector no inicializado
+2025-06-20 17:59:50 - INFO - Interfaz creada exitosamente
+2025-06-20 17:59:50 - INFO - Estrategia inicializada: Estrategia Base
+2025-06-20 17:59:50 - INFO - Estrategia inicializada: Estrategia Base
+2025-06-20 17:59:50 - INFO - Interfaz iniciada
+2025-06-20 17:59:55 - INFO - Conexión exitosa - Balance: 2078.68
+2025-06-20 17:59:55 - INFO - Conectado exitosamente
+2025-06-20 17:59:55 - INFO - \u2713 Conexión exitosa
+2025-06-20 17:59:55 - ERROR - Error al conectar: 'InterfazTrading' object has no attribute 'actualizar_divisas_disponibles'
+2025-06-20 17:59:55 - ERROR - Error al conectar: 'InterfazTrading' object has no attribute 'actualizar_divisas_disponibles'
+2025-06-20 18:00:48 - INFO - Sistema iniciado
+2025-06-20 18:00:48 - INFO - Sistema iniciado correctamente
+2025-06-20 18:00:48 - ERROR - Error al crear la interfaz: 'InterfazTrading' object has no attribute 'actualizar_divisas_disponibles'
+2025-06-20 18:01:06 - INFO - Sistema iniciado
+2025-06-20 18:01:06 - INFO - Sistema iniciado correctamente
+2025-06-20 18:01:06 - ERROR - Error al crear la interfaz: 'InterfazTrading' object has no attribute 'actualizar_divisas_disponibles'
+2025-06-20 18:03:02 - INFO - Sistema iniciado
+2025-06-20 18:03:02 - INFO - Sistema iniciado correctamente
+2025-06-20 18:03:02 - ERROR - Error al obtener divisas: No estás conectado a MetaTrader 5
+2025-06-20 18:03:02 - ERROR - Error al obtener divisas: No estás conectado a MetaTrader 5
+2025-06-20 18:03:02 - INFO - Interfaz creada exitosamente
+2025-06-20 18:03:02 - INFO - Estrategia inicializada: Estrategia Base
+2025-06-20 18:03:02 - INFO - Estrategia inicializada: Estrategia Base
+2025-06-20 18:03:02 - INFO - Interfaz iniciada
+2025-06-20 18:03:02 - ERROR - Error al obtener divisas: No estás conectado a MetaTrader 5
+2025-06-20 18:03:02 - ERROR - Error al obtener divisas: No estás conectado a MetaTrader 5
+2025-06-20 18:03:02 - INFO - Sistema iniciado correctamente
+2025-06-20 18:03:02 - ERROR - Error al obtener divisas: No estás conectado a MetaTrader 5
+2025-06-20 18:03:02 - ERROR - Error al obtener divisas: No estás conectado a MetaTrader 5
+2025-06-20 18:03:02 - INFO - Interfaz creada exitosamente
+2025-06-20 18:03:39 - INFO - Sistema iniciado
+2025-06-20 18:03:39 - INFO - Sistema iniciado correctamente
+2025-06-20 18:03:39 - ERROR - Error al obtener divisas: No estás conectado a MetaTrader 5
+2025-06-20 18:03:39 - ERROR - Error al obtener divisas: No estás conectado a MetaTrader 5
+2025-06-20 18:03:39 - INFO - Interfaz creada exitosamente
+2025-06-20 18:03:39 - INFO - Estrategia inicializada: Estrategia Base
+2025-06-20 18:03:39 - INFO - Estrategia inicializada: Estrategia Base
+2025-06-20 18:03:39 - INFO - Interfaz iniciada
+2025-06-20 18:03:47 - INFO - Conexión exitosa - Balance: 2078.68
+2025-06-20 18:03:47 - INFO - Conectado exitosamente
+2025-06-20 18:03:47 - INFO - \u2713 Conexión exitosa
+2025-06-20 18:05:16 - INFO - Sistema iniciado
+2025-06-20 18:05:16 - INFO - Sistema iniciado correctamente
+2025-06-20 18:05:16 - INFO - Interfaz creada exitosamente
+2025-06-20 18:05:16 - INFO - Estrategia inicializada: Estrategia Base
+2025-06-20 18:05:16 - INFO - Estrategia inicializada: Estrategia Base
+2025-06-20 18:05:16 - INFO - Interfaz iniciada
+2025-06-20 18:05:31 - INFO - Conexión exitosa - Balance: 2078.68
+2025-06-20 18:05:31 - WARNING - No se puede actualizar divisas: No estás conectado
+2025-06-20 18:05:31 - WARNING - No se puede actualizar divisas: No conectado
+2025-06-20 18:05:31 - INFO - Conectado exitosamente
+2025-06-20 18:05:31 - INFO - \u2713 Conexión exitosa
+2025-06-20 18:05:47 - INFO - Estrategia seleccionada: Estrategia Base
+2025-06-20 18:05:50 - INFO - Estrategia seleccionada: Estrategia Base
+2025-06-20 18:05:54 - INFO - Bot iniciado correctamente
+2025-06-20 18:07:07 - INFO - Sistema iniciado
+2025-06-20 18:07:07 - INFO - Sistema iniciado correctamente
+2025-06-20 18:07:07 - INFO - Interfaz creada exitosamente
+2025-06-20 18:07:07 - INFO - Estrategia inicializada: Estrategia Base
+2025-06-20 18:07:07 - INFO - Estrategia inicializada: Estrategia Base
+2025-06-20 18:07:07 - INFO - Interfaz iniciada
+2025-06-20 18:07:11 - INFO - Conexión exitosa - Balance: 2078.68
+2025-06-20 18:07:11 - INFO - Conectado exitosamente
+2025-06-20 18:07:11 - INFO - \u2713 Conexión exitosa
+2025-06-20 18:07:14 - INFO - Divisa seleccionada: GBPUSD
+2025-06-20 18:07:23 - INFO - Estrategia seleccionada: Estrategia Base
+2025-06-20 18:07:26 - INFO - Estrategia seleccionada: Estrategia Base
+2025-06-20 18:07:27 - INFO - Bot iniciado correctamente
+2025-06-20 18:10:31 - INFO - Sistema iniciado
+2025-06-20 18:10:31 - INFO - Sistema iniciado correctamente
+2025-06-20 18:10:31 - INFO - Interfaz creada exitosamente
+2025-06-20 18:10:31 - INFO - Estrategia inicializada: Estrategia Base
+2025-06-20 18:10:31 - INFO - Estrategia inicializada: Estrategia Base
+2025-06-20 18:10:31 - INFO - Interfaz iniciada
+2025-06-20 18:10:33 - INFO - Divisa seleccionada: GBPUSD
+2025-06-20 18:10:37 - INFO - Divisa seleccionada: USDJPY
+2025-06-20 18:10:45 - INFO - Conexión exitosa - Balance: 2078.68
+2025-06-20 18:10:45 - INFO - Conectado exitosamente
+2025-06-20 18:10:45 - INFO - \u2713 Conexión exitosa
+2025-06-20 18:11:01 - INFO - Sistema iniciado
+2025-06-20 18:11:01 - INFO - Sistema iniciado correctamente
+2025-06-20 18:11:01 - INFO - Interfaz creada exitosamente
+2025-06-20 18:11:01 - INFO - Estrategia inicializada: Estrategia Base
+2025-06-20 18:11:01 - INFO - Estrategia inicializada: Estrategia Base
+2025-06-20 18:11:01 - INFO - Interfaz iniciada
+2025-06-20 18:11:05 - INFO - Conexión exitosa - Balance: 2078.68
+2025-06-20 18:11:05 - INFO - Conectado exitosamente
+2025-06-20 18:11:05 - INFO - \u2713 Conexión exitosa
+2025-06-20 18:11:09 - INFO - Conexión exitosa - Balance: 2078.68
+2025-06-20 18:11:09 - INFO - Conectado exitosamente
+2025-06-20 18:11:09 - INFO - \u2713 Conexión exitosa
+2025-06-20 18:12:55 - INFO - Sistema iniciado
+2025-06-20 18:12:55 - INFO - Sistema iniciado correctamente
+2025-06-20 18:12:55 - INFO - Interfaz creada exitosamente
+2025-06-20 18:12:55 - INFO - Estrategia inicializada: Estrategia Base
+2025-06-20 18:12:55 - INFO - Estrategia inicializada: Estrategia Base
+2025-06-20 18:12:55 - INFO - Interfaz iniciada
+2025-06-20 18:13:04 - INFO - Divisa seleccionada: GBPUSD
+2025-06-20 18:13:09 - INFO - Divisa seleccionada: USDJPY
+2025-06-20 18:13:11 - INFO - Divisa seleccionada: EURUSD
+2025-06-20 18:13:46 - INFO - Conexión exitosa - Balance: 2078.68
+2025-06-20 18:13:46 - INFO - Conectado exitosamente
+2025-06-20 18:13:46 - INFO - \u2713 Conexión exitosa
+2025-06-20 18:14:15 - INFO - Conexión exitosa - Balance: 2078.68
+2025-06-20 18:14:15 - INFO - Conectado exitosamente
+2025-06-20 18:14:15 - INFO - \u2713 Conexión exitosa
+2025-06-20 18:14:19 - INFO - Conexión exitosa - Balance: 2078.68
+2025-06-20 18:14:19 - INFO - Conectado exitosamente
+2025-06-20 18:14:19 - INFO - \u2713 Conexión exitosa
+2025-06-20 18:22:22 - INFO - Sistema iniciado
+2025-06-20 18:22:22 - INFO - Sistema iniciado correctamente
+2025-06-20 18:22:22 - INFO - Interfaz creada exitosamente
+2025-06-20 18:22:22 - INFO - Estrategia inicializada: Estrategia Base
+2025-06-20 18:22:22 - INFO - Estrategia inicializada: Estrategia Base
+2025-06-20 18:22:22 - INFO - Interfaz iniciada
+2025-06-20 18:22:24 - INFO - Conexión exitosa - Balance: 2078.68
+2025-06-20 18:22:24 - INFO - Conectado exitosamente
+2025-06-20 18:22:24 - INFO - \u2713 Conexión exitosa
+2025-06-20 18:22:28 - INFO - Divisa seleccionada: GBPUSD
+2025-06-20 18:22:31 - INFO - Estrategia seleccionada: Estrategia Base
+2025-06-20 18:22:33 - INFO - Estrategia seleccionada: Estrategia Base
+2025-06-20 18:22:35 - INFO - Divisa seleccionada: EURUSD
+2025-06-20 18:22:38 - INFO - Bot iniciado correctamente
