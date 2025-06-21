@@ -6,20 +6,28 @@ class Logger:
     """
     Clase para manejo de logs del bot
     """
-    def __init__(self, nombre_archivo='bot.log'):
+    _instance = None
+    
+    def __new__(cls):
+        if cls._instance is None:
+            cls._instance = super(Logger, cls).__new__(cls)
+            cls._instance._initialized = False
+        return cls._instance
+    
+    def __init__(self):
         """
         Inicializa el logger
-        
-        Args:
-            nombre_archivo: Nombre del archivo de log
         """
+        if self._initialized:
+            return
+            
         # Crear directorio para logs si no existe
         if not os.path.exists('logs'):
             os.makedirs('logs')
             
         # Configurar logging
         logging.basicConfig(
-            filename=os.path.join('logs', nombre_archivo),
+            filename=os.path.join('logs', 'bot.log'),
             level=logging.INFO,
             format='%(asctime)s - %(levelname)s - %(message)s',
             datefmt='%Y-%m-%d %H:%M:%S'
@@ -27,16 +35,25 @@ class Logger:
         
         # Crear logger
         self.logger = logging.getLogger('BotMT5')
+        self.logger.setLevel(logging.INFO)
         
-        # Añadir handler para mostrar en consola
+        # Configurar handler para archivo
+        file_handler = logging.FileHandler(os.path.join('logs', 'bot.log'))
+        file_handler.setLevel(logging.INFO)
+        file_formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+        file_handler.setFormatter(file_formatter)
+        self.logger.addHandler(file_handler)
+        
+        # Configurar handler para consola
         console_handler = logging.StreamHandler()
         console_handler.setLevel(logging.INFO)
-        formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
-        console_handler.setFormatter(formatter)
+        console_formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+        console_handler.setFormatter(console_formatter)
         self.logger.addHandler(console_handler)
         
         # Registrar inicio
         self.log_info("Sistema iniciado")
+        self._initialized = True
         
     def log_info(self, mensaje):
         """
@@ -49,19 +66,19 @@ class Logger:
         
     def log_error(self, mensaje):
         """
-        Registrar un error
+        Registrar un mensaje de error
         
         Args:
-            mensaje: Mensaje de error
+            mensaje: Mensaje a registrar
         """
         self.logger.error(mensaje)
         
     def log_warning(self, mensaje):
         """
-        Registrar una advertencia
+        Registrar un mensaje de advertencia
         
         Args:
-            mensaje: Mensaje de advertencia
+            mensaje: Mensaje a registrar
         """
         self.logger.warning(mensaje)
         

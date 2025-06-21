@@ -1,6 +1,7 @@
 import random
 from datetime import datetime, timedelta
 import pandas as pd
+from cuenta import InfoCuenta
 
 class SimuladorMT5:
     """
@@ -22,6 +23,7 @@ class SimuladorMT5:
             "profit": 0.0,
             "margin": 0.0
         }
+        self.conectado = False
         
     def conectar(self):
         """
@@ -30,21 +32,49 @@ class SimuladorMT5:
         Returns:
             bool: True si la conexión es exitosa
         """
+        self.conectado = True
         return True
+        
+    def desconectar(self):
+        """
+        Simula la desconexión de MT5
+        
+        Returns:
+            bool: True si la desconexión es exitosa
+        """
+        try:
+            if self.conectado:
+                self.conectado = False
+                # Limpiar datos simulados
+                self.historico.clear()
+                self.ordenes.clear()
+                return True
+            else:
+                return True  # Ya estaba desconectado
+        except Exception as e:
+            print(f"Error al desconectar: {str(e)}")
+            return False
         
     def obtener_info_cuenta(self):
         """
         Simula la obtención de información de cuenta
         
         Returns:
-            dict: Información de cuenta
+            InfoCuenta: Información de cuenta
         """
-        return {
-            "balance": self.cuenta["balance"],
-            "equity": self.cuenta["equity"],
-            "profit": self.cuenta["profit"],
-            "margin": self.cuenta["margin"]
-        }
+        try:
+            if not self.conectado:
+                return None
+                
+            return InfoCuenta(
+                balance=self.cuenta["balance"],
+                equity=self.cuenta["equity"],
+                profit=self.cuenta["profit"],
+                margin=self.cuenta["margin"]
+            )
+        except Exception as e:
+            print(f"Error en obtener_info_cuenta: {str(e)}")
+            return None
         
     def obtener_divisas_disponibles(self):
         """

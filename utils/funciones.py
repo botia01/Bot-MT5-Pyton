@@ -6,6 +6,8 @@ import pandas as pd
 import numpy as np
 from datetime import datetime
 import logging
+import MetaTrader5 as mt5
+import winsound
 
 logger = logging.getLogger('BotMT5')
 
@@ -126,6 +128,70 @@ def validar_volumen(volumen):
         return volumen > 0 and volumen <= 100
     except (ValueError, TypeError):
         return False
+
+def convertir_timeframe(timeframe_str):
+    """
+    Convierte string de timeframe a constante de MT5
+    
+    Args:
+        timeframe_str: String del timeframe (ej: "M1", "H4")
+        
+    Returns:
+        int: Constante de MT5 correspondiente
+    """
+    timeframes = {
+        "M1": mt5.TIMEFRAME_M1,
+        "M5": mt5.TIMEFRAME_M5,
+        "M15": mt5.TIMEFRAME_M15,
+        "M30": mt5.TIMEFRAME_M30,
+        "H1": mt5.TIMEFRAME_H1,
+        "H4": mt5.TIMEFRAME_H4,
+        "D1": mt5.TIMEFRAME_D1,
+        "W1": mt5.TIMEFRAME_W1,
+        "MN1": mt5.TIMEFRAME_MN1
+    }
+    return timeframes.get(timeframe_str)
+
+def calcular_lote(risk_percent, balance, stop_loss_points):
+    """
+    Calcula el tamaño de lote basado en el riesgo
+    
+    Args:
+        risk_percent: Porcentaje de riesgo (0-100)
+        balance: Balance de la cuenta
+        stop_loss_points: Puntos del stop loss
+        
+    Returns:
+        float: Tamaño de lote
+    """
+    try:
+        risk_amount = (risk_percent / 100) * balance
+        return risk_amount / (stop_loss_points * 10000)
+    except Exception as e:
+        logger.error(f"Error al calcular lote: {str(e)}")
+        return 0.01  # Lote mínimo por defecto
+
+def mostrar_alerta(mensaje, tipo='info'):
+    """
+    Muestra una alerta al usuario
+    
+    Args:
+        mensaje: Mensaje a mostrar
+        tipo: Tipo de alerta (info, warning, error)
+    """
+    try:
+        import tkinter.messagebox as messagebox
+        if tipo == 'info':
+            messagebox.showinfo("Información", mensaje)
+        elif tipo == 'warning':
+            messagebox.showwarning("Advertencia", mensaje)
+        elif tipo == 'error':
+            messagebox.showerror("Error", mensaje)
+            
+        # Sonido de alerta
+        winsound.Beep(1000, 500)  # Frecuencia 1000Hz, duración 500ms
+    except Exception as e:
+        logger.error(f"Error al mostrar alerta: {str(e)}")
 
 def calcular_pips(precio1, precio2, par):
     """

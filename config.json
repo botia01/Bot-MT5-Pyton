@@ -1,12 +1,22 @@
 {
     "par_defecto": "EURUSD",
-    "timeframe": "M5",
+    "timeframe": "M15",
     "estrategia": "Estrategia Base",
-    "lote_minimo": 0.01,
+    "lote_minimo": 0.1,
     "stop_loss": 50,
     "take_profit": 100,
     "modo_simulacion": false,
     "alertas_sonoras": true,
     "idioma": "es",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "notificaciones": {
+        "activadas": true,
+        "sonidos": true,
+        "volumen": 100
+    },
+    "estrategias_disponibles": [
+        "Estrategia Base",
+        "Cruce de Medias",
+        "Estrategia RSI"
+    ]
 }
